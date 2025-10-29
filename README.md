@@ -10,7 +10,6 @@
 
 
 ## 🏗️ Architecture Overview
-## 🏗️ Architecture Overview
 
 ```mermaid
 flowchart TD
@@ -25,29 +24,5 @@ D --> E[🧠 Gemini API - Summarization]
 E --> F[🧾 Summary Returned]
 F --> G[🪟 Extension UI displays summary]
 
-%% === RELATED Q&A ===
-G --> H[📩 POST /api/related-qna]
-H --> I[☕ Backend Q&A Generator]
-I --> J[🧠 Gemini API - Question Generation]
-J --> K[💬 Related Questions (and short answers)]
-
-%% === FURTHER READINGS ===
-K --> L[📩 POST /api/further-readings]
-L --> M[☕ Backend Article Recommender]
-M --> N[🧠 Gemini API - Suggest Related Articles]
-N --> O[📚 Related Reading Links Displayed in Extension]
-
-%% === FUTURE RAG ENHANCEMENT ===
-subgraph RAG[🔮 Future Enhancement: RAG Layer]
-    P1[✳️ Embedding Generation (Gemini / Sentence Transformer)]
-    P2[🗄️ Vector Database (FAISS / Pinecone / Weaviate)]
-    P3[🔍 Context Retrieval]
-    P4[⚡ Context + Query → Gemini for Grounded Answers]
-end
-
-I --> RAG
-L --> RAG
-RAG --> J
-RAG --> N
 ```
 
