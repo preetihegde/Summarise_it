@@ -20,7 +20,7 @@ A[🧑‍💻 User selects text on webpage] --> B[🔹 Chrome Extension]
 %% === BACKEND SUMMARIZATION ===
 B --> C[📩 POST /api/summarise]
 C --> D[☕ Spring Boot Backend]
-D --> E[🧠 Gemini API - Summarization]
+D --> E[🧠 Preprocessing and Gemini API ]
 E --> F[🧾 Summary Returned]
 F --> G[🪟 Extension UI displays summary]
 
