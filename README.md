@@ -10,10 +10,11 @@
 
 
 ## 🏗️ Architecture Overview
-User (Chrome Extension) 
-↓
-Front End gets the data
-↓
-Spring Boot Backend (REST API)
-↓
-Gemini API (Text Generation)
+[User selects text]
+      ↓
+Chrome Extension → /api/summarise
+      ↓
+Spring Boot Backend → Gemini (summary)
+      ↓
+Extension UI shows summary → triggers /related-qna → /further-readings
+
