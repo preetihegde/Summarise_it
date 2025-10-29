@@ -1,0 +1,41 @@
+{
+  "name": "Summarise It",
+  "description": "Enables you to get a summary of an webpage ",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "storage",
+    "sidePanel",
+    "scripting"
+  ],
+  
+  "icons": {
+  "16": "icon16.png",
+  "32": "icon32.png",
+  "48": "icon48.png",
+  "128": "icon128.png"
+},
+  
+  "action": {
+    "default_title": "Summarise It",
+    "default_icon": "summarise_icon.png"
+  },
+  
+  "side_panel":{
+    "default_path":"sidepanel.html"
+  },
+
+  "background":{
+    "service_worker":"background.js"
+  },
+
+  "host_permissions":[
+    "http://localhost:8080/*",
+    "<all_urls>"
+  ],
+
+  "content_security_policy":{
+    "extension_pages":"script-src 'self' ; object-src 'self'"
+  }
+}
