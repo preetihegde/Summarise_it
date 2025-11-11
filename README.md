@@ -11,6 +11,10 @@
 
 ## 🏗️ Architecture Overview
 
+<p align="center">
+   <img src="workflow.png" alt="Flow diagram" width="1000">
+</p>
+
 ```mermaid
 flowchart TD
 
