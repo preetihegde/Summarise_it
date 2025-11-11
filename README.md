@@ -12,7 +12,7 @@
 ## 🏗️ Architecture Overview
 
 <p align="center">
-   <img src="workflow.png" alt="Flow diagram" width="1000">
+   <img src="workflow_summarise.png" alt="Flow diagram" width="1000">
 </p>
 
 ```mermaid
